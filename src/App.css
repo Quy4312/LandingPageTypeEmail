@@ -1,38 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdf9f1;
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
 .App {
   text-align: center;
+  /* max-width: 1440px; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
+  padding: 44px 0 1px 0;
+  background-color: #1e1e1e;
+}
+.HeaderTop {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+.HeaderMenu {
+  display: flex;
+  align-items: center;
+  gap: 0 36px;
+  list-style: none;
+}
+.MenuLink {
+  color: #b5b3af;
+  transition: all 0.2 linear;
+}
+.MenuLink:hover {
+  color: #fff;
+}
+.HeaderLogin {
+  display: inline-block;
+  padding: 9px 25px;
+  /* opacity: 0.2; */
+  background-color: #b5b3af;
+  border-radius: 6px;
+  line-height: 1.625;
+  color: #fff;
+}
+.HeaderLogo {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.HeaderLogo span {
+  background: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+}
+.HeaderContent {
+  max-width: 873px;
+  margin: 0 auto;
+}
+.TextPrimary {
+  background: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+}
+.HeaderHeading {
+  margin-top: 175px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 52px;
+  line-height: calc(62 / 52);
+  margin-bottom: 54px;
+}
+.HeaderButtons {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 0 28px;
+  margin-bottom: 88px;
 }
-
-.App-link {
-  color: #61dafb;
+.HeaderStarted {
+  color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-color: #00bd82;
+  padding: 15px 30px;
+  font-size: 18px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HeaderWorks {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+  font-size: 18px;
+  color: #fff;
+}
+.HeaderStarted:hover,
+.HeaderWorks:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.CountDown {
+  background: #e2f471;
+  padding: 70px 0;
+}
+.CountDownList {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: center;
+}
+.CountDownTitle {
+  color: #1e1e1e;
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 22px;
+  line-height: calc(55 / 44);
+}
+.CountDownText {
+  font-size: 18px;
+  line-height: calc(28 / 18);
+}
+.NewsLetter {
+}
+.NewLetterHeader {
+  margin-bottom: 95px;
+}
+.Heading {
+  font-weight: 600;
+  color: #1e1e1e;
+}
+.HeadingBig {
+  font-size: 50px;
+  max-width: 629px;
+  line-height: calc(63 / 50);
+  margin: 0 auto 18px;
+  text-align: center;
+}
+.NewsLetterMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.NewsLetterText {
+  max-width: 475px;
+  margin: 0 auto;
+}
+.NewsLetterIcon {
+  flex-shrink: 0;
+  margin-bottom: 18px;
+}
+.NewsLetterContent {
+  flex: 1;
+  max-width: 555px;
+}
+.NewsLetterTitle {
+  font-size: 40px;
+  margin-bottom: 18px;
+  line-height: calc(50 / 40);
+  max-width: 378px;
+  text-align: start;
+}
+.Text {
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  text-align: start;
+}
+.NewsLetterList {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.NewsLetterName {
+  font-size: 20px;
+  font-weight: 600;
 }
